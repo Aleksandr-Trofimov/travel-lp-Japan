@@ -102,8 +102,61 @@ body {
 /* Intro styles */
 
 .intro {
-	height: 100vh;
+	min-height: 100vh;
 	background-image: url(../Images/Main_img.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
+	padding-top: 263px;
+}
+.intro__title {
+	font-size: 50px;
+	font-weight: 700;
+	line-height: 60px;
+	color: var(--foto-text-color);
+	max-width: 619px;
+	margin-bottom: 22px;
+}
+.intro__subtitle {
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 24px;
+	color: var(--foto-text-color);
+	max-width: 546px;
+	margin-bottom: 56px;
+}
+.intro__search-form__info {
+	display: flex;
+	flex-wrap: wrap;
+}
+.intro__search-form__field {
+	width: 297px;
+	/* transparent делает фон прозрачным */
+	background-image: transparent;
+	background: url(../Icons/Circle_icon.svg) no-repeat left 6px;
+	background-size: 20px;
+	border: 0;
+	border-bottom: 2px solid #bfc0c5;
+	margin-right: 60px;
+	padding-left: 43px;
+	padding-bottom: 22px;
+	color: var(--foto-text-color);
+}
+.intro__search-form__field::placeholder {
+	font-size: 18px;
+	font-weight: 700;
+	color: var(--foto-text-color);
+}
+.intro__search-form__submit {
+	padding: 15px 35px;
+	text-transform: uppercase;
+	font-size: 24px;
+	font-weight: 700;
+	color: var(--foto-text-color);
+	background-color: #1b7dff;
+	border: 0;
+}
+.intro__search-form__submit:hover,
+.intro__search-form__submit:focus,
+.intro__search-form__submit:active {
+	background: #0e66da;
 }
