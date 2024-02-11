@@ -87,6 +87,12 @@ body {
 	top: 0;
 	left: 0;
 	width: 100%;
+	transition: 0.2s linear;
+	padding-bottom: 20px;
+	z-index: 10;
+}
+.header_active {
+	background: #102746;
 }
 .header_wrapper {
 	display: flex;
@@ -496,4 +502,25 @@ body {
 .top__card-more:focus,
 .top__card-more:active {
 	background: #0e66da;
+}
+
+/* Videos styles */
+
+.videos {
+	width: 100%;
+}
+.videos__wrapper {
+	max-width: 1440px;
+	margin: 0 auto;
+	position: relative;
+}
+.video__item {
+	padding-top: 56.25%;
+}
+.video__element {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 }
