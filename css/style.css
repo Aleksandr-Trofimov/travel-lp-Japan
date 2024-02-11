@@ -405,3 +405,95 @@ body {
 .tour__more:focus {
 	opacity: 0.85;
 }
+
+/* Top styles */
+
+.top {
+	margin-bottom: 86px;
+}
+.top-wrapper__full {
+	max-width: 1280px;
+	margin: 0 auto;
+}
+.top__title {
+	margin-bottom: 54px;
+}
+.top__cards {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 58px;
+}
+.top__card {
+	display: flex;
+	flex-direction: column;
+}
+.top__card-pic {
+	position: relative;
+	margin-bottom: 45px;
+}
+.top__card-thumb {
+	width: 100%;
+}
+.top__card-stats {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: flex-end;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 14.6%;
+	background: rgba(21, 24, 36, 0.6);
+	padding: 16px 25px;
+}
+.top__card-title {
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 700;
+	color: var(--foto-text-color);
+	margin: 0 auto 0 0;
+}
+.top__card-likes {
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 700;
+	color: var(--foto-text-color);
+	padding-right: 20px;
+	background: url(../Icons/Heart_icon.svg) no-repeat right center;
+	margin-right: 14px;
+}
+.top__card-likes-value {
+}
+.top__card-comments {
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 700;
+	color: var(--foto-text-color);
+	padding-right: 23px;
+	background: url(../Icons/Message-icon.svg) no-repeat right center;
+}
+.top__card-comments-value {
+}
+.top__card-description {
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 400;
+	color: var(--card-text-color);
+	margin-bottom: 41px;
+}
+.top__card-more {
+	width: 118px;
+	padding: 12px 19px;
+	background-color: var(--links-text-color);
+	color: var(--foto-text-color);
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 16px;
+	margin: auto 0 0 0;
+}
+.top__card-more:hover,
+.top__card-more:focus,
+.top__card-more:active {
+	background: #0e66da;
+}
