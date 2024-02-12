@@ -54,6 +54,18 @@ body {
 	max-width: 1262px;
 	margin: 0 auto;
 }
+/* Adaptive for wpappers */
+
+@media (max-width: 1310px) {
+	.wrapper,
+	.wrapper__full,
+	.top-wrapper__full,
+	.tours-wrapper__full,
+	.videos__wrapper {
+		padding: 0 15px;
+	}
+}
+
 :root {
 	--common-text-color: #000;
 	--card-text-color: #102746;
@@ -79,6 +91,7 @@ body {
 	bottom: 0;
 	left: 0;
 }
+
 /* Header styles */
 
 .header {
@@ -88,10 +101,10 @@ body {
 	width: 100%;
 	transition: 0.2s linear;
 	padding-bottom: 20px;
-	z-index: 10;
+	z-index: 4;
 }
 .header_active {
-	background: #102746;
+	background: var(--footer-color);
 }
 .header_wrapper {
 	display: flex;
@@ -127,6 +140,89 @@ body {
 .header__link:focus,
 .header__link:active {
 	opacity: 0.75;
+}
+
+/* Header burger */
+
+.header__burger {
+	display: none;
+	position: relative;
+	width: 40px;
+	height: 28px;
+}
+.burger {
+}
+.burger__line {
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: 2px;
+	background-color: var(--foto-text-color);
+	left: 0;
+}
+.burger__line__first {
+	top: 0;
+}
+.burger__line__second {
+	top: 50%;
+	transform: translateY(-50%);
+}
+.burger__line__third {
+	bottom: 0;
+}
+
+@media screen and (max-width: 767px) {
+	.header__burger {
+		display: block;
+	}
+	.header__nav {
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		background-color: #000;
+		z-index: 5;
+		padding: 75px;
+		transform: translateX(100%);
+		transition: 0.2s linear;
+	}
+	.header__nav-active {
+		transform: translateX(0);
+	}
+
+	.header__item {
+		width: 100%;
+		margin-right: 0;
+		gap: 30px;
+	}
+	.header__link {
+		font-size: 42px;
+		line-height: 40px;
+	}
+	.header__nav-close {
+		width: 40px;
+		height: 40px;
+		position: absolute;
+		top: 53px;
+		right: 20px;
+		z-index: 6;
+	}
+	.header__nav-close-line {
+		display: block;
+		width: 100%;
+		height: 2px;
+		position: absolute;
+		background-color: #fff;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+	.header__nav-close-line:first-child {
+		transform: translateY(-50%) rotate(45deg);
+	}
+	.header__nav-close-line:last-child {
+		transform: translateY(-50%) rotate(-45deg);
+	}
 }
 
 /* Intro styles */
@@ -358,7 +454,7 @@ body {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	z-index: 5;
+	z-index: 3;
 }
 
 /* Tours styles */
